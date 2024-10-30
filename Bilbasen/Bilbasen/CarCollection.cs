@@ -1,10 +1,6 @@
-﻿using DomainModels;
-
-namespace Bilbasen
+﻿public class CarCollection
 {
-	public class CarCollection
-	{
-		List<Car> _cars = new List<Car>
+	private readonly List<Car> _cars = new List<Car>
 		{
 			new Car("Toyota", "Corolla", 2020, "White", true, 45_000, "Gas", 1320, "Sedan"),
 			new Car("Tesla", "Model S", 2023, "Black", false, 0, "Electric", 1961, "Sedan"),
@@ -68,7 +64,5 @@ namespace Bilbasen
 			new Car("Mazda", "Mazda3", 2017, "Red", true, 90_000, "Gas", 1320, "Sedan")
 		};
 
-		public List<Car> GetCars()
-		{ return _cars; }
-	}
+	public List<Car> GetCars() => _cars;
 }
